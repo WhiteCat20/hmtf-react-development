@@ -1,0 +1,194 @@
+/* https://hihayk.github.io/scale/#4/6/50/80/-51/67/20/14/0b5450/11/84/80/white  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$font-hmtfNiat : 'Montserrat', sans-serif;
+:root{
+  --mainColor: #0b5450;
+  --mainTextColor: #f5e6cc;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainColor); 
+}
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #b30000; 
+// }
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+
+nav{
+  background-color: var(--mainColor);
+  color: white;
+}
+.navbar-wrapper{
+  width: 70%;
+}
+.nav-link{
+  color: #f5e6cc !important;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.img{
+  background-image: url(./dsc_hmtf.png);
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  letter-spacing: 2px;
+  .title{
+    margin-top: 250px;
+    font-size: 80px;
+  }
+}
+
+
+.divider{
+  width: 70%;
+  height: 2px;
+  background-color: #f5e6cc;
+}
+
+.hero-button{
+  background-color:var(--mainColor) ;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 45px;
+  padding: 15px 30px;
+}
+.About{
+  background-color: #2B6C5C ;
+  padding-bottom: 100px;
+}
+.container-about{
+  width: 70%;
+  color: var(--mainTextColor);
+}
+
+.container-about #tentang-hmtf{
+  padding-top: 120px;
+  font-size: 59px;
+}
+
+.container-about #tentang-hmtf-desc{
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+}
+
+.container-about #visi-misi-judul{
+  font-size: 59px;
+}
+.container-about #visi{
+  color: white;
+  font-size: 23px;
+}
+.fa-quote-left, .fa-quote-right{
+  font-size: 30px;
+}
+
+.container-about #misi li{
+  font-size: 20px;
+  color: white;
+}
+
+.Footer{
+  background-color: var(--mainColor);
+  #footer-name{
+    color: white;
+    padding: 30px 0;
+    font-size: 20px;
+  }
+}
+
+.HmtfNiat{
+  font-family: $font-hmtfNiat;
+  #hmtf-hero{
+    background-color: #DEEDCF;
+    padding-bottom: 150px;
+    padding-top: 30vh;
+    .container-hero{
+      flex-wrap: wrap;
+      width: 60%;
+      #header-1{
+        color: #0A2F51;
+        padding-top: 22px;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      #header-2{
+        color: #188977;
+        font-size: 80px;
+        font-weight: bold;
+        line-height: 80%;
+      }
+    }
+    .hero-slogan{
+      margin-top: 124px;
+      gap: 97px;
+      #slogan{
+        font-weight: bold;
+        font-size: 26px;
+        color: white;
+        padding: 29px 39px;
+        background-color: #188977;
+      }
+    }
+  }
+  #hmtf-nama{
+    background-color: #FCFAE6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    .container-nama{
+      width: 80%;
+      #arti-nama{
+        margin-top: 104px;
+        font-weight: bold;
+        color: #0A2F51;
+      }
+      #def-nama{
+        margin-top: 97px;
+        display: flex;
+        justify-content: space-between;
+        .wrapper{
+          height: 140px;
+          width: 583px;
+          // background-color: rgba(0, 0, 0, 0.3);
+          font-size: 25px;
+        }
+      }
+      #conc-nama{
+        width: 930px;
+        background-color: #188977;
+        margin-top: 97px;
+        border-radius: 17px;
+        padding: 21px 31px;
+        font-size: 25px;
+        font-weight: 500;
+        color: #FCFAE6;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+  }
+}
